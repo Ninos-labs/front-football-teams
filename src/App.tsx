@@ -1,23 +1,14 @@
-import React from 'react';
+import React, { FC } from 'react';
+import { ThemeProvider } from 'styled-components';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import * as config from 'config';
+import GlobalStyles from 'global.styled';
+
+const App: FC = () => (
+  <ThemeProvider theme={config.theme}>
+    <GlobalStyles />
+    <div>Hello React App!</div>
+  </ThemeProvider>
+);
 
 export default App;
