@@ -19,6 +19,10 @@ const GlobalStyles = createGlobalStyle(
       font-family: ${theme.fonts.family.toString()};
       font-size: ${theme.fonts.sizes.default};
     }
+
+    h1 {
+      font-weight: 500;
+    }
   `
 );
 
