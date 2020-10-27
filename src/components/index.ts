@@ -1,3 +1,4 @@
 import Title from './title';
+import BoxTitleStyled from './boxTitle';
 
-export { Title };
+export { Title, BoxTitleStyled };
