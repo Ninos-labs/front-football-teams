@@ -20,8 +20,10 @@ const GlobalStyles = createGlobalStyle(
       font-size: ${theme.fonts.sizes.default};
     }
 
-    h1 {
+    h1, h2 {
       font-weight: 500;
+      line-height: 1.5;
+      margin: 0;
     }
   `
 );
