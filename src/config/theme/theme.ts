@@ -2,6 +2,7 @@ import { themeTypes } from './theme.type';
 
 export const theme: themeTypes = {
   colors: {
+    white: '#fff',
     alabaster: '#f7f7f7',
     blueZodiac: '#0A1130',
     dustyGray: '#999',
@@ -21,6 +22,12 @@ export const theme: themeTypes = {
       percentage: '2.4rem'
     }
   },
-  radius: '.4rem',
-  gutter: '3rem'
+  radius: {
+    small: '.2rem',
+    big: '.4rem'
+  },
+  gutter: {
+    small: '1.5rem',
+    big: '3rem'
+  }
 };

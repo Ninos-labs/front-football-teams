@@ -1,5 +1,6 @@
 export type themeTypes = {
   colors: {
+    white: string;
     alabaster: string;
     blueZodiac: string;
     dustyGray: string;
@@ -19,6 +20,12 @@ export type themeTypes = {
       percentage: string;
     };
   };
-  radius: string;
-  gutter: string;
+  radius: {
+    small: string;
+    big: string;
+  };
+  gutter: {
+    small: string;
+    big: string;
+  };
 };
