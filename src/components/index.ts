@@ -1,5 +1,6 @@
+import Match from './match';
 import Title from './title';
 import MatchCounter from './matchCounter';
 import BoxTitleStyled from './boxTitle';
 
-export { Title, MatchCounter, BoxTitleStyled };
+export { Match, Title, MatchCounter, BoxTitleStyled };
