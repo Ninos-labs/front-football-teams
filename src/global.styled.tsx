@@ -7,23 +7,45 @@ const GlobalStyles = createGlobalStyle(
     *, 
     *:after, 
     *:before {
-      box-sizing: inherit;
-    }
+      box-sizing: inherit;    
+    }    
 
     html {
-      font-size: ${theme.fonts.sizes.reset};
+      font-size: ${theme.fonts.sizes.reset};     
     }
 
     body {
       color: ${theme.colors.blueZodiac};
       font-family: ${theme.fonts.family.toString()};
       font-size: ${theme.fonts.sizes.default};
+      margin: 0;      
+    }
+
+    * {
+      scroll-behavior: smooth;
+
+      ::-webkit-scrollbar {
+        width: .1rem;
+      }
+  
+      ::-webkit-scrollbar-track {
+        background-color: ${theme.colors?.gallery};
+      }
+  
+      ::-webkit-scrollbar-thumb {
+        border: .1rem solid ${theme.colors?.dustyGray};
+      }         
     }
 
     h1, h2 {
       font-weight: 500;
       line-height: 1.5;
       margin: 0;
+    }
+
+    #root {
+      margin: 0 auto;
+      max-width: 180rem;
     }
   `
 );
