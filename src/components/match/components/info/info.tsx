@@ -14,11 +14,14 @@ const Info: FC<InfoTypes> = ({
   timezone
 }) => {
   const { locale, timeZone: tz } = Intl.DateTimeFormat().resolvedOptions();
-  const datetime = DateTime.fromISO(`${dates}T${hours}`, { zone: timezone });
+  const datetime = DateTime.fromISO(
+    `${dates ? dates : ''}${hours ? `T${hours}` : ''}`,
+    { zone: timezone }
+  );
   const datetimeWithYourTZAndLocale = datetime
     .setZone(tz)
     .setLocale(locale)
-    .toFormat('dd LLL, yyyy. HH:mm');
+    .toFormat(`dd LLL, yyyy. ${hours ? 'HH:mm' : ''}`);
   return (
     <InfoStyled>
       <h4>
@@ -34,7 +37,7 @@ const Info: FC<InfoTypes> = ({
 Info.propTypes = {
   versus: PropTypes.string.isRequired,
   dates: PropTypes.string.isRequired,
-  hours: PropTypes.string.isRequired,
+  hours: PropTypes.string,
   events: PropTypes.string.isRequired,
   phases: PropTypes.string.isRequired,
   timezone: PropTypes.string.isRequired

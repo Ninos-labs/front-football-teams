@@ -1,6 +1,6 @@
 export type MatchCounterTypes = {
   title: string;
-  amount: string;
+  amount: number;
   isTotal?: boolean;
 };
 

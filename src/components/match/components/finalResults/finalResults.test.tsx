@@ -2,15 +2,16 @@ import React from 'react';
 import { render } from '@testing-library/react';
 
 import FinalResults from './finalResults';
+import { FinalResultsTypes } from './finalResults.types';
 
 describe('Components | FinalResults', () => {
-  let data;
+  let data: FinalResultsTypes;
   beforeEach(() => {
     data = {
       at: 'Home',
       results: 'Loss',
-      gf: '0',
-      ga: '1'
+      gf: 0,
+      ga: 1
     };
   });
 

@@ -2,9 +2,10 @@ import React from 'react';
 import { render } from '@testing-library/react';
 
 import Info from './info';
+import { InfoTypes } from './info.types';
 
 describe('Components | Info', () => {
-  let data;
+  let data: InfoTypes;
   beforeEach(() => {
     data = {
       versus: 'Paraguay',
@@ -25,6 +26,13 @@ describe('Components | Info', () => {
   it('should render the match datetime formatted', () => {
     const { getByText } = render(<Info {...data} />);
     const datetime = getByText(/17 Nov, 2020. 00:00/);
+    expect(datetime).toBeInTheDocument();
+  });
+
+  it('should render only date formatted when hours be null', () => {
+    delete data.hours;
+    const { getByText } = render(<Info {...data} />);
+    const datetime = getByText(/17 Nov, 2020./);
     expect(datetime).toBeInTheDocument();
   });
 

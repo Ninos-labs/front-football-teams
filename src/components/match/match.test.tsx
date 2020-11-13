@@ -2,9 +2,10 @@ import React from 'react';
 import { render } from '@testing-library/react';
 
 import Match from './match';
+import { MatchTypes } from './match.types';
 
 describe('Components | Match', () => {
-  let data;
+  let data: MatchTypes;
   beforeEach(() => {
     data = {
       at: 'Home',
@@ -14,8 +15,8 @@ describe('Components | Match', () => {
       hours: '00:00',
       events: 'Clas. Mundial (CONMEBOL) 2020',
       phases: 'j2',
-      gf: '0',
-      ga: '1',
+      gf: 0,
+      ga: 1,
       timezone: 'Europe/Madrid'
     };
   });

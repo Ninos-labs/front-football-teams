@@ -17,8 +17,8 @@ FinalResults.propTypes = {
   at: PropTypes.oneOf<AtTypes>(['Home', 'Abroad', 'Neutral']).isRequired,
   results: PropTypes.oneOf<ResultsTypes>(['Not played', 'Loss', 'Win', 'Draw'])
     .isRequired,
-  gf: PropTypes.string.isRequired,
-  ga: PropTypes.string.isRequired
+  gf: PropTypes.number.isRequired,
+  ga: PropTypes.number.isRequired
 };
 
 export default FinalResults;
