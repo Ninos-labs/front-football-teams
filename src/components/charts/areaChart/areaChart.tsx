@@ -1,8 +1,11 @@
 import React, { FC } from 'react';
 import { AreaChart, Area, XAxis, CartesianGrid, Tooltip } from 'recharts';
 
-const WrapperAreaChart = ({ data, items }: any) => (
-  <div style={{ width: 'calc(100% - 450px)' }}>
+import AreaChartStyled from './areaChart.styled';
+import { AreaChartTypes } from './areaChart.types';
+
+const WrapperAreaChart: FC<AreaChartTypes> = ({ data, items }) => (
+  <AreaChartStyled>
     <AreaChart
       width={1200}
       height={300}
@@ -18,7 +21,7 @@ const WrapperAreaChart = ({ data, items }: any) => (
       <CartesianGrid strokeDasharray="2 2" />
       <XAxis dataKey="years" />
       <Tooltip />
-      {items.map((item: any, index: number) => (
+      {items.map((item, index) => (
         <Area
           key={index}
           type="monotone"
@@ -29,7 +32,7 @@ const WrapperAreaChart = ({ data, items }: any) => (
         />
       ))}
     </AreaChart>
-  </div>
+  </AreaChartStyled>
 );
 
 export default WrapperAreaChart;
