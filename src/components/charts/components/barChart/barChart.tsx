@@ -1,9 +1,10 @@
-import React, { FC } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import { XAxis, CartesianGrid, Tooltip, Legend, BarChart, Bar } from 'recharts';
 
 import { BarChartTypes } from './barChart.types';
 
-const WrapperBarChart: FC<BarChartTypes> = ({ data, items, xAxis }) => (
+const WrapperBarChart = ({ data, items, xAxis }: BarChartTypes) => (
   <div>
     <BarChart
       width={500}
@@ -20,11 +21,22 @@ const WrapperBarChart: FC<BarChartTypes> = ({ data, items, xAxis }) => (
       <XAxis dataKey={xAxis} />
       <Tooltip />
       <Legend />
-      {items.map((item: any, index: number) => (
+      {items.map((item, index) => (
         <Bar key={index} dataKey={item.name} stackId="a" fill={item.fill} />
       ))}
     </BarChart>
   </div>
 );
+
+WrapperBarChart.propTypes = {
+  items: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string.isRequired,
+      fill: PropTypes.string.isRequired
+    }).isRequired
+  ),
+  data: PropTypes.array.isRequired,
+  xAxis: PropTypes.string.isRequired
+};
 
 export default WrapperBarChart;

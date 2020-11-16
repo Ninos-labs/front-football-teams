@@ -1,10 +1,11 @@
-import React, { FC } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import { AreaChart, Area, XAxis, CartesianGrid, Tooltip } from 'recharts';
 
 import AreaChartStyled from './areaChart.styled';
 import { AreaChartTypes } from './areaChart.types';
 
-const WrapperAreaChart: FC<AreaChartTypes> = ({ data, items }) => (
+const WrapperAreaChart = ({ data, items }: AreaChartTypes) => (
   <AreaChartStyled>
     <AreaChart
       width={1200}
@@ -34,5 +35,15 @@ const WrapperAreaChart: FC<AreaChartTypes> = ({ data, items }) => (
     </AreaChart>
   </AreaChartStyled>
 );
+
+WrapperAreaChart.propTypes = {
+  items: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string.isRequired,
+      fill: PropTypes.string.isRequired
+    }).isRequired
+  ),
+  data: PropTypes.array.isRequired
+};
 
 export default WrapperAreaChart;
