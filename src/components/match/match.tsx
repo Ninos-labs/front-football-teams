@@ -1,10 +1,10 @@
-import React, { FC } from 'react';
+import React from 'react';
 
 import MatchStyled from './match.styled';
 import { MatchTypes } from './match.types';
 import * as Components from './components';
 
-const Match: FC<MatchTypes> = (props) => (
+const Match = (props: MatchTypes) => (
   <MatchStyled>
     {props.results !== 'Not played' && (
       <Components.FinalResults

@@ -1,10 +1,10 @@
-import React, { FC } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 
 import MatchCounterStyled from './matchCounter.styled';
 import { MatchCounterTypes } from './matchCounter.types';
 
-const MatchCounter: FC<MatchCounterTypes> = ({ title, amount, isTotal }) => {
+const MatchCounter = ({ title, amount, isTotal }: MatchCounterTypes) => {
   const amountFormatted = (amount * 100).toFixed(2);
   return (
     <MatchCounterStyled isTotal={!!isTotal}>

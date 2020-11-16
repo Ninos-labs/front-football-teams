@@ -1,10 +1,10 @@
-import React, { FC } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 
 import FinalResultsStyled from './finalResults.styled';
 import { AtTypes, ResultsTypes, FinalResultsTypes } from './finalResults.types';
 
-const FinalResults: FC<FinalResultsTypes> = ({ results, at, gf, ga }) => (
+const FinalResults = ({ results, at, gf, ga }: FinalResultsTypes) => (
   <FinalResultsStyled data-testid="final-result" data-result={results}>
     <ul>
       <li>{at === 'Home' ? gf : ga}</li>

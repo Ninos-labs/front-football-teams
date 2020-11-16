@@ -1,18 +1,18 @@
-import React, { FC } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import { DateTime } from 'luxon';
 
 import InfoStyled from './info.styled';
 import { InfoTypes } from './info.types';
 
-const Info: FC<InfoTypes> = ({
+const Info = ({
   versus,
   dates,
   hours,
   events,
   phases,
   timezone
-}) => {
+}: InfoTypes) => {
   const { locale, timeZone: tz } = Intl.DateTimeFormat().resolvedOptions();
   const datetime = DateTime.fromISO(
     `${dates ? dates : ''}${hours ? `T${hours}` : ''}`,

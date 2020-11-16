@@ -13,7 +13,9 @@ const ContentStyled = styled.div`
     border-right: 1px solid ${({ theme }) => theme.colors?.gallery};
     flex-basis: 38rem;
     height: calc(100vh - 18rem);
+    top: 13.8rem;
     overflow-y: scroll;
+    position: sticky;
   }
 
   main {

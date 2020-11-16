@@ -8,6 +8,8 @@ const HeaderStyled = styled.header`
   gap: 2rem;
   top: 0;
   padding: 2rem;
+  position: sticky;
+  z-index: 2;
 
   h1 {
     flex-basis: 36rem;
