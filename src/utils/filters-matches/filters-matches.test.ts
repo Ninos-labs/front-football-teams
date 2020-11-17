@@ -1,7 +1,7 @@
 import { byPlayed, byNotPLayed } from './filters-matches';
 
 describe('Utils | Filters Matches', () => {
-  let matches = [];
+  let matches: { results: string; versus: string }[] = [];
   beforeEach(() => {
     matches = [
       {
