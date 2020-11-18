@@ -8,4 +8,5 @@ export type AreaChartItemsTypes = [
 export type AreaChartTypes = {
   data: [];
   items: AreaChartItemsTypes;
+  datakey: string;
 };

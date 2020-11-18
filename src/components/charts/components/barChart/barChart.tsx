@@ -1,13 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { XAxis, CartesianGrid, Tooltip, Legend, BarChart, Bar } from 'recharts';
+import {
+  XAxis,
+  CartesianGrid,
+  Tooltip,
+  Legend,
+  BarChart,
+  Bar,
+  YAxis
+} from 'recharts';
 
 import { BarChartTypes } from './barChart.types';
 
 const WrapperBarChart = ({ data, items, xAxis }: BarChartTypes) => (
-  <div>
+  <div style={{ width: '100%' }}>
     <BarChart
-      width={500}
+      width={1200}
       height={300}
       data={data}
       margin={{
@@ -19,6 +27,7 @@ const WrapperBarChart = ({ data, items, xAxis }: BarChartTypes) => (
     >
       <CartesianGrid strokeDasharray="3 3" />
       <XAxis dataKey={xAxis} />
+      <YAxis />
       <Tooltip />
       <Legend />
       {items.map((item, index) => (

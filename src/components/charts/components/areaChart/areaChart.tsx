@@ -5,7 +5,7 @@ import { AreaChart, Area, XAxis, CartesianGrid, Tooltip } from 'recharts';
 import AreaChartStyled from './areaChart.styled';
 import { AreaChartTypes } from './areaChart.types';
 
-const WrapperAreaChart = ({ data, items }: AreaChartTypes) => (
+const WrapperAreaChart = ({ data, items, datakey }: AreaChartTypes) => (
   <AreaChartStyled>
     <AreaChart
       width={1200}
@@ -20,7 +20,7 @@ const WrapperAreaChart = ({ data, items }: AreaChartTypes) => (
       }}
     >
       <CartesianGrid strokeDasharray="2 2" />
-      <XAxis dataKey="years" />
+      <XAxis dataKey={datakey} />
       <Tooltip />
       {items.map((item, index) => (
         <Area
@@ -43,7 +43,8 @@ WrapperAreaChart.propTypes = {
       fill: PropTypes.string.isRequired
     }).isRequired
   ),
-  data: PropTypes.array.isRequired
+  data: PropTypes.array.isRequired,
+  datakey: PropTypes.string.isRequired
 };
 
 export default WrapperAreaChart;
