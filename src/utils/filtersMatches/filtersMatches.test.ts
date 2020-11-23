@@ -1,4 +1,4 @@
-import { byPlayed, byNotPLayed } from './filters-matches';
+import { byPlayed, byNotPLayed } from './filtersMatches';
 
 describe('Utils | Filters Matches', () => {
   let matches: { results: string; versus: string }[] = [];
