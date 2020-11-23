@@ -8,7 +8,7 @@
   ],
   "rules": {
     "block-no-empty": true,
-    "unit-whitelist": ["%", "rem"],
+    "unit-allowed-list": ["%", "rem"],
     "order/order": [
       "custom-properties",
       "declarations"
