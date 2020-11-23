@@ -9,4 +9,5 @@ export type AreaChartTypes = {
   data: [];
   items: AreaChartItemsTypes;
   datakey: string;
+  customTooltip?: any;
 };

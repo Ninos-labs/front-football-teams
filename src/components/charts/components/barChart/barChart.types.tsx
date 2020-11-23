@@ -13,4 +13,5 @@ export interface BarChartTypes {
   data: DataTypes[];
   items: ItemTypes[];
   xAxis: xAxisTypes;
+  customTooltip?: any;
 }

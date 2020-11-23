@@ -1,15 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { AreaChart, Area, XAxis, CartesianGrid, Tooltip } from 'recharts';
+import { AreaChart, Area, XAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 
-import AreaChartStyled from './areaChart.styled';
 import { AreaChartTypes } from './areaChart.types';
 
-const WrapperAreaChart = ({ data, items, datakey }: AreaChartTypes) => (
-  <AreaChartStyled>
+const WrapperAreaChart = ({ data, items, datakey, customTooltip }: AreaChartTypes) => (
+  <ResponsiveContainer minWidth="600" minHeight="200px">
     <AreaChart
-      width={1200}
-      height={300}
       data={data}
       stackOffset="expand"
       margin={{
@@ -21,7 +18,7 @@ const WrapperAreaChart = ({ data, items, datakey }: AreaChartTypes) => (
     >
       <CartesianGrid strokeDasharray="2 2" />
       <XAxis dataKey={datakey} />
-      <Tooltip />
+      <Tooltip content={customTooltip} />
       {items.map((item, index) => (
         <Area
           key={index}
@@ -33,7 +30,7 @@ const WrapperAreaChart = ({ data, items, datakey }: AreaChartTypes) => (
         />
       ))}
     </AreaChart>
-  </AreaChartStyled>
+  </ResponsiveContainer>
 );
 
 WrapperAreaChart.propTypes = {

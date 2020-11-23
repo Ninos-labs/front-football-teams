@@ -1,22 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {
-  XAxis,
-  CartesianGrid,
-  Tooltip,
-  Legend,
-  BarChart,
-  Bar,
-  YAxis
-} from 'recharts';
+import { XAxis, CartesianGrid, Tooltip, BarChart, Bar, ResponsiveContainer } from 'recharts';
 
 import { BarChartTypes } from './barChart.types';
 
-const WrapperBarChart = ({ data, items, xAxis }: BarChartTypes) => (
-  <div style={{ width: '100%' }}>
+const WrapperBarChart = ({ data, items, xAxis, customTooltip }: BarChartTypes) => (
+  <ResponsiveContainer minWidth="600" minHeight="200px">
     <BarChart
-      width={1200}
-      height={300}
+      width={600}
+      height={200}
       data={data}
       margin={{
         top: 20,
@@ -27,14 +19,12 @@ const WrapperBarChart = ({ data, items, xAxis }: BarChartTypes) => (
     >
       <CartesianGrid strokeDasharray="3 3" />
       <XAxis dataKey={xAxis} />
-      <YAxis />
-      <Tooltip />
-      <Legend />
+      <Tooltip content={customTooltip} />
       {items.map((item, index) => (
         <Bar key={index} dataKey={item.name} stackId="a" fill={item.fill} />
       ))}
     </BarChart>
-  </div>
+  </ResponsiveContainer>
 );
 
 WrapperBarChart.propTypes = {
