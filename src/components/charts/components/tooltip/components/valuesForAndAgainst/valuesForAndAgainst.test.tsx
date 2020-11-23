@@ -21,13 +21,13 @@ describe('Components | ValuesForAndAgainst', () => {
 
   it('should render values for amount', () => {
     const { getByText } = render(<ValuesForAndAgainst {...data} />);
-    const valuesForNode = getByText(/A favor: 8/);
+    const valuesForNode = getByText(/A Favor: 8/);
     expect(valuesForNode).toBeInTheDocument();
   });
 
   it('should render values against amount', () => {
     const { getByText } = render(<ValuesForAndAgainst {...data} />);
-    const valueAgainstNode = getByText(/En contra: 4/);
+    const valueAgainstNode = getByText(/En Contra: 4/);
     expect(valueAgainstNode).toBeInTheDocument();
   });
 });

@@ -7,8 +7,8 @@ import TooltipStyled from 'components/charts/components/tooltip/tooltip.styled';
 const ValuesForAndAgainst = ({ versus, valueFor, valueAgainst }: ValuesForAndAgainstTypes) => (
   <TooltipStyled>
     <h4>Vs. {versus}</h4>
-    <p>A favor: {valueFor}</p>
-    <p>En contra: {valueAgainst}</p>
+    <p>A Favor: {valueFor}</p>
+    <p>En Contra: {valueAgainst}</p>
   </TooltipStyled>
 );
 
