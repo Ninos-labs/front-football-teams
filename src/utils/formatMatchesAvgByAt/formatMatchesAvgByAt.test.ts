@@ -1,8 +1,4 @@
-import {
-  byAt,
-  itemFormatted,
-  formatMatchesAvgByAt
-} from './format-matches-avg-by-at';
+import { byAt, itemFormatted, formatMatchesAvgByAt } from './formatMatchesAvgByAt';
 
 describe('Format matches', () => {
   let data;
@@ -52,13 +48,13 @@ describe('Format matches', () => {
   });
 
   it('should return an array with divided data in three objects with following sort: home, abroad and neutral', () => {
-    const home = { name: 'Home' };
+    const home = { name: 'Local' };
     data
       .filter((item) => byAt(item, 'Home'))
       .map((item) => itemFormatted(item, 'Home'))
       .map((item) => (home[item.name] = item.value));
 
-    const abroad = { name: 'Abroad' };
+    const abroad = { name: 'Visita' };
     data
       .filter((item) => byAt(item, 'Abroad'))
       .map((item) => itemFormatted(item, 'Abroad'))

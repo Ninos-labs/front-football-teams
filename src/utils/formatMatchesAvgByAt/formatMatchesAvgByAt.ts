@@ -1,11 +1,6 @@
-import {
-  AtTypes,
-  ItemTypes,
-  DataTypes
-} from './format-matches-avg-by-at.types';
+import { AtTypes, ItemTypes, DataTypes } from './formatMatchesAvgByAt.types';
 
-export const byAt = (item: ItemTypes, at: AtTypes) =>
-  item.description.includes(at);
+export const byAt = (item: ItemTypes, at: AtTypes) => item.description.includes(at);
 
 export const itemFormatted = (item: ItemTypes, at: AtTypes) => ({
   name: item.description.replace(`,${at}`, ''),
@@ -13,17 +8,18 @@ export const itemFormatted = (item: ItemTypes, at: AtTypes) => ({
 });
 
 export const formatMatchesAvgByAt = (data: ItemTypes[]) => {
-  const home: DataTypes = { name: 'Home' };
+  const home: DataTypes = { name: 'Local' };
   data
     .filter((item) => byAt(item, 'Home'))
     .map((item) => itemFormatted(item, 'Home'))
     .map((item) => (home[item.name] = item.value));
 
-  const abroad: DataTypes = { name: 'Abroad' };
+  const abroad: DataTypes = { name: 'Visita' };
   data
     .filter((item) => byAt(item, 'Abroad'))
     .map((item) => itemFormatted(item, 'Abroad'))
-    .map((item) => (abroad[item.name] = item.value));
+    .map((item) => (abroad[item.name] = item.value))
+    .map((item) => ({ ...(item as any), name: 'Visita' }));
 
   const neutral: DataTypes = { name: 'Neutral' };
   data
