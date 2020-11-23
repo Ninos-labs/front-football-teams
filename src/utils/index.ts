@@ -1,2 +1,3 @@
-export * from './filters-matches';
-export * from './format-matches-avg-by-at';
+export * from './filtersMatches';
+export * from './addTypesToMatch';
+export * from './formatMatchesAvgByAt';
