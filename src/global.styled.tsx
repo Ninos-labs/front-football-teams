@@ -47,6 +47,17 @@ const GlobalStyles = createGlobalStyle(
       margin: 0 auto;
       max-width: 180rem;
     }
+
+    main {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      section {
+        margin: 0 20px;
+        width: calc(50% - 40px);
+      }
+    }
   `
 );
 
