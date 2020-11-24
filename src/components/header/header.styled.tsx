@@ -5,14 +5,23 @@ const HeaderStyled = styled.header`
   background-color: ${({ theme }) => theme.colors?.white};
   border-bottom: 0.1rem solid ${({ theme }) => theme.colors?.gallery};
   display: flex;
-  gap: 2rem;
   top: 0;
   padding: 2rem;
   position: sticky;
   z-index: 2;
 
+  @media screen and (max-width: ${({ theme }) => theme.size?.medium}) {
+    flex-flow: wrap;
+  }
+
+  & > * {
+    margin: 0.5rem;
+  }
+
   h1 {
-    flex-basis: 36rem;
+    @media screen and (min-width: ${({ theme }) => theme.size?.medium}) {
+      flex-basis: 36rem;
+    }
   }
 
   div {
