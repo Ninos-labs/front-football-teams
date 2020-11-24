@@ -12,15 +12,23 @@ const MatchCounterStyled = styled.div`
   padding: ${({ theme }) => theme.gutter?.small};
 
   h4 {
-    font-size: ${({ theme }) => theme.fonts?.sizes?.default};
+    font-size: 1rem;
     margin: 0;
     text-transform: uppercase;
+
+    @media screen and (min-width: ${({ theme }) => theme.size?.large}) {
+      font-size: ${({ theme }) => theme.fonts?.sizes?.default};
+    }
   }
 
   h5 {
-    font-size: ${({ theme }) => theme.fonts?.sizes?.percentage};
+    font-size: 1.4rem;
     font-weight: 400;
     margin: ${({ theme }) => `${theme.gutter?.small} 0 0`};
+
+    @media screen and (min-width: ${({ theme }) => theme.size?.large}) {
+      font-size: ${({ theme }) => theme.fonts?.sizes?.percentage};
+    }
   }
 
   small {
