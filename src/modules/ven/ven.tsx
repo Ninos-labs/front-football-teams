@@ -54,7 +54,7 @@ const Ven = () => {
       </HeaderStyled>
       <ContentStyled>
         <aside>
-          <BoxTitleStyled>Próximos partidos</BoxTitleStyled>
+          {notPlayed.length >= 1 && <BoxTitleStyled>Próximos partidos</BoxTitleStyled>}
           {notPlayed.map((match, index) => (
             <Match key={index} {...addTypesToMatch(match as any)} />
           ))}
