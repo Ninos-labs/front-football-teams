@@ -29,5 +29,11 @@ export const theme: themeTypes = {
   gutter: {
     small: '1.5rem',
     big: '3rem'
+  },
+  size: {
+    small: '512px',
+    medium: '900px',
+    large: '1200px',
+    xl: '1400px'
   }
 };
