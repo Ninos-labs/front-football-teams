@@ -11,19 +11,24 @@ const GlobalStyles = createGlobalStyle(
     }    
 
     html {
-      font-size: ${theme.fonts.sizes.reset};     
+      font-size: 8px;
+      
+      @media screen and (min-width: ${theme.size?.large}) {
+        font-size: ${theme.fonts.sizes.reset};
+      }
     }
 
     body {
       color: ${theme.colors.blueZodiac};
       font-family: ${theme.fonts.family.toString()};
       font-size: ${theme.fonts.sizes.default};
-      margin: 0;      
+      margin: 0;
     }
 
     * {
       scroll-behavior: smooth;
-
+      scrollbar-width: thin;
+      
       ::-webkit-scrollbar {
         width: .1rem;
       }
@@ -34,7 +39,7 @@ const GlobalStyles = createGlobalStyle(
   
       ::-webkit-scrollbar-thumb {
         border: .1rem solid ${theme.colors?.dustyGray};
-      }         
+      } 
     }
 
     h1, h2 {
@@ -46,17 +51,6 @@ const GlobalStyles = createGlobalStyle(
     #root {
       margin: 0 auto;
       max-width: 180rem;
-    }
-
-    main {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-
-      section {
-        margin: 0 20px;
-        width: calc(50% - 40px);
-      }
     }
   `
 );

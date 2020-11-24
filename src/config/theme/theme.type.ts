@@ -28,4 +28,10 @@ export type themeTypes = {
     small: string;
     big: string;
   };
+  size: {
+    small: string;
+    medium: string;
+    large: string;
+    xl: string;
+  };
 };
