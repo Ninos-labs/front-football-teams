@@ -6,8 +6,8 @@ Mediante un proceso de [ETL](https://en.wikipedia.org/wiki/Extract,_transform,_l
 
 ### CONMEBOL:
 
-- [x] Venezuela.
-- [] Colombia (en progreso)
+- [x] Venezuela
+- [ ] Colombia (en progreso)
 
 #### Construido principalmente gracias a:
 
