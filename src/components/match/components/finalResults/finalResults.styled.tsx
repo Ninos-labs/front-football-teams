@@ -3,9 +3,11 @@ import styled from 'styled-components';
 const FinalResultsStyled = styled.div`
   background-color: ${({ theme }) => theme.colors?.alabaster};
   border-radius: ${({ theme }) => theme.radius?.big};
-  flex-basis: 90px;
+  flex-basis: 6rem;
   font-size: 1.8rem;
   font-weight: 700;
+  margin-right: 1rem;
+  min-width: 6rem;
   padding: 1.2rem 0;
   position: relative;
 
