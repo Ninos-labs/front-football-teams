@@ -1,44 +1,19 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Estadísticas de selecciones nacionales de Fútbol.
 
-## Available Scripts
+Mediante un proceso de [ETL](https://en.wikipedia.org/wiki/Extract,_transform,_load) (Extracción, Transformación y Carga) obtenemos y analizamos gran cantidad de datos por selección nacional. El motivo de este proyecto es presentar de una manera agradable toda la información obtenida en el proceso anterior.
 
-In the project directory, you can run:
+![demo](https://lh3.googleusercontent.com/fife/ABSRlIp6EmuT3jwRCAYqoT85nQP3VeleuuauRsnoPo5UuphMuBdzEkZ3rM88Cr9DaZWZ7eGr7VfIWjt0CkSujREZWr3hQjD-LVWw34E8UVQ1ybeKFJOF2XpkrTnR7yC7-v3nFszvSOkWeVaRaPtDnPLrwB2MXOvP1YINdm-2d6kpZ_DO9_fG7JGh10Cyqd55oUy1g5LIlGon7H5UuWqzuGGct-iW08ePzPDO8vErmvri-2ROtHHPjxmni7tWS8l6ItSQMosWTnKQCcdaqRe0ERqdcb8vvD_alOWN79iVQIWC5nP-cih932zB2R2GCzB8FlX3AQwHRSOTJSE1_SKPmYOIYRMpbdV2oIbVwKDbek3GD_hXkk9Vv_reR_U9-75pYThMl-MJqt9XzTZh-N3so6pqFv1Wus_Wipe_b2lHg7fU5C0fM869wrxh9uWmJG5VyBE7HsMOX-f5W5qcUMpRykIbQ4j-vA-Zr0uksOnQayrezs8gGkmYTfBHpB5zga1_o_bWmY7RAiMV1WgfXPSQxPbE3zbBs-FJT_fJk-n4Qq-Qo1BswTSfpfB1UUgYUhpCGbA0GEINOlcvUJVRuhZCPssCrZZQuNHsgSUzhwKhy85wk63qRZmyY4-x3QJJ4werfKWGEvafPsdzsmQcQ203Mlew2f6o1mPaz9ywcaye7hW7oxdl6mmBk55k9NKDhBBd7qc-ARq-ByVVvXMjt-jkjwsIaXfKW3HabVPXPWQ=w3360-h1770-ft)
 
-### `yarn start`
+### CONMEBOL:
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- [x] Venezuela.
+- [] Colombia (en progreso)
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+#### Construido principalmente gracias a:
 
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- JavaScript
+- React
+- Styled Components
+- TypeScript
+- Recharts
+- Luxon
