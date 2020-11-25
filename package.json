@@ -1,5 +1,6 @@
 {
   "name": "football-stats",
+  "homepage": "https://ninos-labs.github.io/front-football-teams",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
