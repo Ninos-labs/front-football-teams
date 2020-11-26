@@ -8,7 +8,7 @@ const WrapperBarChart = ({ data, items, xAxis, customTooltip }: BarChartTypes) =
   <div>
     <ResponsiveContainer minWidth="600" minHeight="200px">
       <BarChart data={data}>
-        <CartesianGrid strokeDasharray="3 3" />
+        <CartesianGrid strokeDasharray="2 2" />
         <XAxis dataKey={xAxis} />
         <Tooltip content={customTooltip} />
         {items.map((item, index) => (

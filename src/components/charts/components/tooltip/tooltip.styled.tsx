@@ -3,6 +3,7 @@ import styled from 'styled-components';
 const TooltipStyled = styled.div`
   background-color: white;
   border-radius: 1rem;
+  border: 1px solid ${({ theme }) => theme.colors?.gallery};
   padding: 0.8rem 1.5rem;
 
   h4 {
