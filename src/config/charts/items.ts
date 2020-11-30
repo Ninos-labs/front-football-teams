@@ -14,17 +14,17 @@ export const areaChartItems = [
 
 export const goalsAvgAreaChartItems = [
   { name: 'gf', fill: theme.colors.pastelGreen },
-  { name: 'ga', fill: theme.colors.blueZodiac }
+  { name: 'ga', fill: theme.colors.japonica }
 ];
 
 export const goalsByTeamAreaChartItems = [
   { name: 'gf_sum', fill: theme.colors.pastelGreen },
-  { name: 'ga_sum', fill: theme.colors.blueZodiac }
+  { name: 'ga_sum', fill: theme.colors.japonica }
 ];
 
 export const goalsMaxAndMinAreaChartItems = [
   { name: 'gf_max', fill: theme.colors.pastelGreen },
-  { name: 'ga_max', fill: theme.colors.blueZodiac }
+  { name: 'ga_max', fill: theme.colors.japonica }
 ];
 
 export const winsByTeamItems = [{ name: 'wins', fill: theme.colors.pastelGreen }];
