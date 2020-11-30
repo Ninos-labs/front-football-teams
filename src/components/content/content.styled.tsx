@@ -21,11 +21,10 @@ const ContentStyled = styled.div`
 
     @media screen and (min-width: ${({ theme }) => theme.size?.large}) {
       height: calc(100vh - 18rem);
-      border-right: 1px solid ${({ theme }) => theme.colors?.gallery};
       flex-basis: 38rem;
-      top: 13.8rem;
+      top: 15rem;
       position: sticky;
-      overflow-y: scroll;
+      overflow: hidden;
     }
 
     @media screen and (max-width: ${({ theme }) => theme.size?.small}) {

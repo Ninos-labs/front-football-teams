@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import { FixedSizeList as List } from 'react-window';
 
 import * as data from 'data/ven';
 import * as utils from 'utils';
@@ -28,17 +29,31 @@ const Ven = () => {
           {notPlayed.length >= 1 && (
             <components.BoxTitleStyled>Próximos partidos</components.BoxTitleStyled>
           )}
-          {notPlayed.map((match, index) => (
-            <components.Match key={index} {...utils.addTypesToMatch(match as any)} />
-          ))}
+          {notPlayed.length >= 1 && (
+            <List height={150} itemCount={notPlayed.length} itemSize={70} width="100%">
+              {({ index, style }) => (
+                <div key={index} style={style}>
+                  <components.Match {...utils.addTypesToMatch(notPlayed[index] as any)} />
+                </div>
+              )}
+            </List>
+          )}
           <components.BoxTitleStyled>Goleadas históricas</components.BoxTitleStyled>
-          {historicalMatches.map((match, index) => (
-            <components.Match key={index} {...utils.addTypesToMatch(match as any)} />
-          ))}
+          <List height={150} itemCount={historicalMatches.length} itemSize={70} width="100%">
+            {({ index, style }) => (
+              <div key={index} style={style}>
+                <components.Match {...utils.addTypesToMatch(historicalMatches[index] as any)} />
+              </div>
+            )}
+          </List>
           <components.BoxTitleStyled>Últimos partidos</components.BoxTitleStyled>
-          {played.map((match, index) => (
-            <components.Match key={index} {...utils.addTypesToMatch(match as any)} />
-          ))}
+          <List height={560} itemCount={played.length} itemSize={70} width="100%">
+            {({ index, style }) => (
+              <div key={index} style={style}>
+                <components.Match {...utils.addTypesToMatch(played[index] as any)} />
+              </div>
+            )}
+          </List>
         </aside>
         <main>
           <section>
