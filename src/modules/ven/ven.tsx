@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import Helmet from 'react-helmet';
 import { FixedSizeList as List } from 'react-window';
 
 import * as data from 'data/ven';
@@ -16,6 +17,9 @@ const Ven = () => {
 
   return (
     <Fragment>
+      <Helmet>
+        <title>Venezuela | Estadísticas de Fútbol</title>
+      </Helmet>
       <components.HeaderStyled>
         <components.Title team="Venezuela" />
         <components.MatchCounter title="Partidos" amount={results.matchesTotal} isTotal />
