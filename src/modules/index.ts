@@ -1,3 +1,4 @@
+import Col from './col';
 import Ven from './ven';
 
-export { Ven };
+export { Col, Ven };
