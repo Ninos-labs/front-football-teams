@@ -13,7 +13,7 @@ const Ven = () => {
 
   return (
     <WrapperModule
-      title="Colombia"
+      title="Venezuela"
       data={data}
       played={played}
       notPlayed={notPlayed}
