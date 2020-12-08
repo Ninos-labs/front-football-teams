@@ -21,7 +21,7 @@ const WrapperModule = ({
       <title>{`${title} | Estadísticas de Fútbol`}</title>
     </Helmet>
     <components.HeaderStyled>
-      <components.Title team="Colombia" />
+      <components.Title team={title} />
       <components.MatchCounter title="Partidos" amount={results.matchesTotal} isTotal />
       <components.MatchCounter title="Victorias" amount={results.winAvg} />
       <components.MatchCounter title="Empates" amount={results.drawAvg} />
