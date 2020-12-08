@@ -6,12 +6,4 @@ import MatchCounter from './matchCounter';
 import ContentStyled from './content';
 import BoxTitleStyled from './boxTitle';
 
-export {
-  Match,
-  Title,
-  Charts,
-  HeaderStyled,
-  MatchCounter,
-  ContentStyled,
-  BoxTitleStyled
-};
+export { Match, Title, Charts, HeaderStyled, MatchCounter, ContentStyled, BoxTitleStyled };
