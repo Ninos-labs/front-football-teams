@@ -8,7 +8,8 @@ Mediante un proceso de [ETL](https://en.wikipedia.org/wiki/Extract,_transform,_l
 
 - [x] Venezuela
 - [x] Colombia
-- [ ] Brasil (en progreso)
+- [x] Brasil
+- [ ] Ecuador (en progreso)
 
 #### Construido principalmente gracias a:
 
