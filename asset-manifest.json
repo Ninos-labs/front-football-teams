@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "/front-football-teams/static/js/main.d1de199b.chunk.js",
-    "main.js.map": "/front-football-teams/static/js/main.d1de199b.chunk.js.map",
+    "main.js": "/front-football-teams/static/js/main.e5d81658.chunk.js",
+    "main.js.map": "/front-football-teams/static/js/main.e5d81658.chunk.js.map",
     "runtime-main.js": "/front-football-teams/static/js/runtime-main.e3334bb9.js",
     "runtime-main.js.map": "/front-football-teams/static/js/runtime-main.e3334bb9.js.map",
-    "static/js/2.e35f32b6.chunk.js": "/front-football-teams/static/js/2.e35f32b6.chunk.js",
-    "static/js/2.e35f32b6.chunk.js.map": "/front-football-teams/static/js/2.e35f32b6.chunk.js.map",
+    "static/js/2.ef052cae.chunk.js": "/front-football-teams/static/js/2.ef052cae.chunk.js",
+    "static/js/2.ef052cae.chunk.js.map": "/front-football-teams/static/js/2.ef052cae.chunk.js.map",
     "index.html": "/front-football-teams/index.html",
-    "precache-manifest.32941852617a16ebc263f4071c37bc9f.js": "/front-football-teams/precache-manifest.32941852617a16ebc263f4071c37bc9f.js",
+    "precache-manifest.7d0f20d17be85b33320125c864341aa5.js": "/front-football-teams/precache-manifest.7d0f20d17be85b33320125c864341aa5.js",
     "service-worker.js": "/front-football-teams/service-worker.js",
-    "static/js/2.e35f32b6.chunk.js.LICENSE.txt": "/front-football-teams/static/js/2.e35f32b6.chunk.js.LICENSE.txt"
+    "static/js/2.ef052cae.chunk.js.LICENSE.txt": "/front-football-teams/static/js/2.ef052cae.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.e3334bb9.js",
-    "static/js/2.e35f32b6.chunk.js",
-    "static/js/main.d1de199b.chunk.js"
+    "static/js/2.ef052cae.chunk.js",
+    "static/js/main.e5d81658.chunk.js"
   ]
 }
