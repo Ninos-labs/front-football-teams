@@ -9,7 +9,13 @@ Mediante un proceso de [ETL](https://en.wikipedia.org/wiki/Extract,_transform,_l
 - [x] Venezuela
 - [x] Colombia
 - [x] Brasil
-- [ ] Ecuador (en progreso)
+- [x] Ecuador
+- [ ] Peru (en progreso)
+- [ ] Bolivia
+- [ ] Paraguay
+- [ ] Chile
+- [ ] Uruguay
+- [ ] Argentina
 
 #### Construido principalmente gracias a:
 
