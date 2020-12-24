@@ -9,6 +9,7 @@ const Routes: FC = () => (
       <Route exact path="/" render={() => <Redirect to="/equipos/ven" />} />
       <Route exact path="/equipos/bra" component={Modules.Bra} />
       <Route exact path="/equipos/col" component={Modules.Col} />
+      <Route exact path="/equipos/ecu" component={Modules.Ecu} />
       <Route exact path="/equipos/ven" component={Modules.Ven} />
       <Route path="*" render={() => <div>404. Not found.</div>} />
     </Switch>
