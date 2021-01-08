@@ -10,7 +10,7 @@ Mediante un proceso de [ETL](https://en.wikipedia.org/wiki/Extract,_transform,_l
 - [x] Colombia
 - [x] Brasil
 - [x] Ecuador
-- [ ] Peru (en progreso)
+- [x] Peru
 - [ ] Bolivia
 - [ ] Paraguay
 - [ ] Chile
