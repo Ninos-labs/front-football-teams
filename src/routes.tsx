@@ -7,6 +7,7 @@ const Routes: FC = () => (
   <HashRouter basename="/">
     <Switch>
       <Route exact path="/" render={() => <Redirect to="/equipos/ven" />} />
+      <Route exact path="/equipos/bol" component={Modules.Bol} />
       <Route exact path="/equipos/bra" component={Modules.Bra} />
       <Route exact path="/equipos/col" component={Modules.Col} />
       <Route exact path="/equipos/ecu" component={Modules.Ecu} />
