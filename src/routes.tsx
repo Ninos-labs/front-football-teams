@@ -10,6 +10,7 @@ const Routes: FC = () => (
       <Route exact path="/equipos/bol" component={Modules.Bol} />
       <Route exact path="/equipos/bra" component={Modules.Bra} />
       <Route exact path="/equipos/col" component={Modules.Col} />
+      <Route exact path="/equipos/chile" component={Modules.Chile} />
       <Route exact path="/equipos/ecu" component={Modules.Ecu} />
       <Route exact path="/equipos/par" component={Modules.Par} />
       <Route exact path="/equipos/peru" component={Modules.Peru} />

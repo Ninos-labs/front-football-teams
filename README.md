@@ -13,7 +13,7 @@ Mediante un proceso de [ETL](https://en.wikipedia.org/wiki/Extract,_transform,_l
 - [x] Peru
 - [x] Bolivia
 - [x] Paraguay
-- [ ] Chile
+- [x] Chile
 - [ ] Uruguay
 - [ ] Argentina
 
