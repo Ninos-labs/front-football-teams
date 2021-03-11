@@ -14,7 +14,7 @@ Mediante un proceso de [ETL](https://en.wikipedia.org/wiki/Extract,_transform,_l
 - [x] Bolivia
 - [x] Paraguay
 - [x] Chile
-- [ ] Uruguay
+- [x] Uruguay
 - [ ] Argentina
 
 #### Construido principalmente gracias a:
