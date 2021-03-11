@@ -14,6 +14,7 @@ const Routes: FC = () => (
       <Route exact path="/equipos/ecu" component={Modules.Ecu} />
       <Route exact path="/equipos/par" component={Modules.Par} />
       <Route exact path="/equipos/peru" component={Modules.Peru} />
+      <Route exact path="/equipos/uruguay" component={Modules.Uru} />
       <Route exact path="/equipos/ven" component={Modules.Ven} />
       <Route path="*" render={() => <div>404. Not found.</div>} />
     </Switch>
