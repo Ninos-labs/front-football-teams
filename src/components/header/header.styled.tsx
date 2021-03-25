@@ -6,7 +6,7 @@ const HeaderStyled = styled.header`
   border-bottom: 0.1rem solid ${({ theme }) => theme.colors?.gallery};
   display: flex;
   top: 0;
-  padding: 2rem;
+  padding: 2rem 1.5rem;
   position: sticky;
   z-index: 2;
 
