@@ -17,6 +17,50 @@ Mediante un proceso de [ETL](https://en.wikipedia.org/wiki/Extract,_transform,_l
 - [x] Uruguay
 - [x] Argentina
 
+### CONCACAF:
+
+- [x] Panamá
+- [ ] Costa Rica
+- [ ] El Salvador
+- [ ] Guatemala
+- [ ] Honduras
+- [ ] Nicaragua
+- [ ] Belice
+- [ ] Canada
+- [ ] Estados Unidos
+- [ ] Mexico
+- [ ] Anguila
+- [ ] Antigua y Barbuda
+- [ ] Aruba
+- [ ] Bahamas
+- [ ] Barbados
+- [ ] Bermudas
+- [ ] Bonaire
+- [ ] Cuba
+- [ ] Curazao
+- [ ] Dominica
+- [ ] Granada
+- [ ] Guadalupe
+- [ ] Guyana
+- [ ] Guayana Francesa
+- [ ] Haití
+- [ ] Islas Caimán
+- [ ] Islas Turcas y Caicos
+- [ ] Islas Vírgenes Británicas
+- [ ] Islas Vírgenes de los Estados Unidos
+- [ ] Jamaica
+- [ ] Martinica
+- [ ] Montserrat
+- [ ] Puerto Rico
+- [ ] República Dominicana
+- [ ] Saint-Martin
+- [ ] San Cristóbal y Nieves
+- [ ] San Vicente y las Granadinas
+- [ ] Santa Lucía
+- [ ] Sint Maarten
+- [ ] Surinam
+- [ ] Trinidad y Tobago
+
 #### Construido principalmente gracias a:
 
 - JavaScript
