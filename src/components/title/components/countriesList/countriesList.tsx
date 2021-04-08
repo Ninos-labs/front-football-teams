@@ -10,6 +10,7 @@ export const countries = [
   { name: 'Bolivia', code: 'bol' },
   { name: 'Brasil', code: 'bra' },
   { name: 'Colombia', code: 'col' },
+  { name: 'Costa Rica', code: 'costarica' },
   { name: 'Chile', code: 'chi' },
   { name: 'Ecuador', code: 'ecu' },
   { name: 'Panamá', code: 'panama' },
