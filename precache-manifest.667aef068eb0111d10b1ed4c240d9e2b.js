@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "014dd649ca539eaa09e3b19208ae6baa",
+    "revision": "6ac836ac67f77ae2b1f3922d7949302c",
     "url": "/front-football-teams/index.html"
   },
   {
-    "revision": "b28fa815ce8ff34511d4",
-    "url": "/front-football-teams/static/js/2.8fc35e25.chunk.js"
+    "revision": "58b1dad16ce10a65b516",
+    "url": "/front-football-teams/static/js/2.12a158bd.chunk.js"
   },
   {
     "revision": "d739ef940da08a801a6d975d93202462",
-    "url": "/front-football-teams/static/js/2.8fc35e25.chunk.js.LICENSE.txt"
+    "url": "/front-football-teams/static/js/2.12a158bd.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "84c35705fb85ef2e5ea5",
-    "url": "/front-football-teams/static/js/main.c0b42195.chunk.js"
+    "revision": "9314c6699118a5a19965",
+    "url": "/front-football-teams/static/js/main.e2ca95d3.chunk.js"
   },
   {
     "revision": "043401e353ba3e480b3e",
