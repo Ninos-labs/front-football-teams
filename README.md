@@ -20,7 +20,7 @@ Mediante un proceso de [ETL](https://en.wikipedia.org/wiki/Extract,_transform,_l
 ### CONCACAF:
 
 - [x] Panamá
-- [ ] Costa Rica
+- [x] Costa Rica
 - [ ] El Salvador
 - [ ] Guatemala
 - [ ] Honduras
