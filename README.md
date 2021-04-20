@@ -21,10 +21,10 @@ Mediante un proceso de [ETL](https://en.wikipedia.org/wiki/Extract,_transform,_l
 
 - [x] Panamá
 - [x] Costa Rica
+- [x] Nicaragua
 - [ ] El Salvador
 - [ ] Guatemala
 - [ ] Honduras
-- [ ] Nicaragua
 - [ ] Belice
 - [ ] Canada
 - [ ] Estados Unidos
