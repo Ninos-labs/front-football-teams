@@ -23,7 +23,7 @@ Mediante un proceso de [ETL](https://en.wikipedia.org/wiki/Extract,_transform,_l
 - [x] Costa Rica
 - [x] Nicaragua
 - [x] El Salvador
-- [ ] Guatemala
+- [x] Guatemala
 - [ ] Honduras
 - [ ] Belice
 - [ ] Canada
