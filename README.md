@@ -24,7 +24,7 @@ Mediante un proceso de [ETL](https://en.wikipedia.org/wiki/Extract,_transform,_l
 - [x] Nicaragua
 - [x] El Salvador
 - [x] Guatemala
-- [ ] Honduras
+- [x] Honduras
 - [ ] Belice
 - [ ] Canada
 - [ ] Estados Unidos

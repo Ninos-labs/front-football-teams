@@ -7,6 +7,7 @@ import Chile from './chile';
 import Ecu from './ecu';
 import ElSalvador from './elsalvador';
 import Guatemala from './guatemala';
+import Honduras from './honduras';
 import Nicaragua from './nicaragua';
 import Pan from './pan';
 import Par from './par';
@@ -24,6 +25,7 @@ export {
   Ecu,
   ElSalvador,
   Guatemala,
+  Honduras,
   Nicaragua,
   Pan,
   Par,
