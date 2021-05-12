@@ -8,6 +8,7 @@ const Routes: FC = () => (
     <Switch>
       <Route exact path="/" render={() => <Redirect to="/equipos/ven" />} />
       <Route exact path="/equipos/arg" component={Modules.Arg} />
+      <Route exact path="/equipos/belice" component={Modules.Belice} />
       <Route exact path="/equipos/bol" component={Modules.Bol} />
       <Route exact path="/equipos/bra" component={Modules.Bra} />
       <Route exact path="/equipos/col" component={Modules.Col} />

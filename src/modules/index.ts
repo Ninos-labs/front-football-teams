@@ -1,4 +1,5 @@
 import Arg from './arg';
+import Belice from './belice';
 import Bol from './bol';
 import Bra from './bra';
 import Col from './col';
@@ -17,6 +18,7 @@ import Ven from './ven';
 
 export {
   Arg,
+  Belice,
   Bol,
   Bra,
   Col,
