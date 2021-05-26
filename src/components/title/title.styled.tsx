@@ -4,6 +4,7 @@ const TitleStyled = styled.div`
   button {
     background: transparent;
     border: 0;
+    color: ${({ theme }) => theme.colors?.blueZodiac};
     cursor: pointer;
     font-size: ${({ theme }) => theme.fonts?.sizes?.title};
     outline: 0;
@@ -16,13 +17,6 @@ const TitleStyled = styled.div`
       ${({ isOpenCountriesList }: { isOpenCountriesList: boolean }) =>
         isOpenCountriesList ? '-180deg' : '0'}
     );
-  }
-
-  p {
-    color: ${({ theme }) => theme.colors?.dustyGray};
-    display: block;
-    font-size: ${({ theme }) => theme.fonts?.sizes?.subTitle};
-    margin: 0.4rem 0 0;
   }
 `;
 

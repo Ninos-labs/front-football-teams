@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const FinalResultsStyled = styled.div`
-  background-color: ${({ theme }) => theme.colors?.alabaster};
+  background-color: ${({ theme }) => theme.colors?.white};
   border-radius: ${({ theme }) => theme.radius?.big};
   flex-basis: 6rem;
   font-size: 1.8rem;

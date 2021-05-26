@@ -15,6 +15,7 @@ const InfoStyled = styled.div`
     }
 
     small {
+      font-weight: 400;
       @media screen and (max-width: ${({ theme }) => theme.size?.medium}) {
         display: block;
       }

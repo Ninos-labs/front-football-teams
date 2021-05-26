@@ -8,23 +8,24 @@ export const theme: themeTypes = {
     dustyGray: '#999',
     gallery: '#eee',
     pastelGreen: '#6DD799',
+    pastelGreenLg: '#f4f7f2',
     japonica: '#D76D6D'
   },
   fonts: {
     family: ['Roboto', 'sans-serif'],
     sizes: {
       reset: '10px',
-      title: '2.6rem',
+      title: '2rem',
       subTitle: '1.6rem',
       default: '1.4rem',
       small: '1.2rem',
       goals: '1.8rem',
-      percentage: '2.4rem'
+      percentage: '1.8rem'
     }
   },
   radius: {
-    small: '.2rem',
-    big: '.4rem'
+    small: '.4rem',
+    big: '1rem'
   },
   gutter: {
     small: '1.5rem',
