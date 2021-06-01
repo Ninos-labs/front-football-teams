@@ -32,9 +32,9 @@ export const theme: themeTypes = {
     big: '3rem'
   },
   size: {
-    small: '512px',
+    small: '800px',
     medium: '900px',
     large: '1200px',
-    xl: '1400px'
+    xl: '1500px'
   }
 };
