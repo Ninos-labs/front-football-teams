@@ -2,6 +2,7 @@ import Arg from './arg';
 import Belice from './belice';
 import Bol from './bol';
 import Bra from './bra';
+import Canada from './canada';
 import Col from './col';
 import Costarica from './costarica';
 import Chile from './chile';
@@ -21,6 +22,7 @@ export {
   Belice,
   Bol,
   Bra,
+  Canada,
   Col,
   Costarica,
   Chile,
