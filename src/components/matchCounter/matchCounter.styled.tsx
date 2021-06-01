@@ -4,8 +4,7 @@ import { MatchCounterStyledTypeS } from './matchCounter.types';
 
 const MatchCounterStyled = styled.div`
   background-color: ${({ theme, isTotal }: MatchCounterStyledTypeS) =>
-    isTotal ? theme.colors?.pastelGreen : theme.colors?.alabaster};
-  border-radius: ${({ theme }) => theme.radius?.big};
+    isTotal ? theme.colors?.pastelGreen : theme.colors?.white};
   color: ${({ theme, isTotal }: MatchCounterStyledTypeS) =>
     isTotal ? theme.colors?.white : theme.colors?.blueZodiac};
   line-height: 1;
@@ -14,7 +13,6 @@ const MatchCounterStyled = styled.div`
   h4 {
     font-size: 1rem;
     margin: 0;
-    text-transform: uppercase;
 
     @media screen and (min-width: ${({ theme }) => theme.size?.large}) {
       font-size: ${({ theme }) => theme.fonts?.sizes?.default};
@@ -22,9 +20,9 @@ const MatchCounterStyled = styled.div`
   }
 
   h5 {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 400;
-    margin: ${({ theme }) => `${theme.gutter?.small} 0 0`};
+    margin: 1.2rem 0 0;
 
     @media screen and (min-width: ${({ theme }) => theme.size?.large}) {
       font-size: ${({ theme }) => theme.fonts?.sizes?.percentage};

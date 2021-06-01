@@ -6,7 +6,7 @@ const HeaderStyled = styled.header`
   border-bottom: 0.1rem solid ${({ theme }) => theme.colors?.gallery};
   display: flex;
   top: 0;
-  padding: 2rem 1.5rem;
+  padding: 0 1.5rem;
   position: sticky;
   z-index: 2;
 
@@ -14,18 +14,16 @@ const HeaderStyled = styled.header`
     flex-flow: wrap;
   }
 
-  & > * {
-    margin: 0.5rem;
-  }
-
-  h1 {
-    @media screen and (min-width: ${({ theme }) => theme.size?.medium}) {
-      flex-basis: 36rem;
-    }
-  }
-
   div {
     flex: auto;
+
+    &:first-of-type {
+      flex-basis: 19rem;
+
+      @media screen and (max-width: ${({ theme }) => theme.size?.large}) {
+        flex-basis: 100%;
+      }
+    }
   }
 `;
 

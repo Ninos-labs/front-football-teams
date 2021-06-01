@@ -1,8 +1,8 @@
 import styled, { keyframes } from 'styled-components';
 
 const Appears = keyframes`
-  0% { top: 13rem; }
-  100% { top: 14rem; }
+  0% { top: 8rem; }
+  100% { top: 9rem; }
 `;
 
 const CountriesListStyled = styled.div`
@@ -10,7 +10,7 @@ const CountriesListStyled = styled.div`
   animation-duration: 0.3s;
   animation-fill-mode: forwards;
   background-color: white;
-  height: calc(100vh - 16rem);
+  height: calc(100vh - 9rem);
   left: 0;
   margin: auto;
   min-width: 10rem;

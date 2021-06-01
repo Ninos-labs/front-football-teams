@@ -19,6 +19,7 @@ const GlobalStyles = createGlobalStyle(
     }
 
     body {
+      background-color: ${theme.colors.alabaster};
       color: ${theme.colors.blueZodiac};
       font-family: ${theme.fonts.family.toString()};
       font-size: ${theme.fonts.sizes.default};

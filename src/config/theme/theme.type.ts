@@ -6,6 +6,7 @@ export type themeTypes = {
     dustyGray: string;
     gallery: string;
     pastelGreen: string;
+    pastelGreenLg: string;
     japonica: string;
   };
   fonts: {

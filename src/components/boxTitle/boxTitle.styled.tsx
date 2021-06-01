@@ -3,8 +3,8 @@ import styled from 'styled-components';
 const BoxTitleStyled = styled.h2`
   background-color: ${({ theme }) => theme.colors?.white};
   font-size: ${({ theme }) => theme.fonts?.sizes?.subTitle};
-  top: 100px;
-  padding: 2rem 0;
+  top: 10rem;
+  padding: 0 0 2rem;
   position: sticky;
   z-index: 1;
 
@@ -13,7 +13,7 @@ const BoxTitleStyled = styled.h2`
   }
 
   @media screen and (max-width: ${({ theme }) => theme.size?.small}) {
-    top: 180px;
+    top: 10rem;
   }
 `;
 
