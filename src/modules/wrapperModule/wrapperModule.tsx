@@ -17,6 +17,9 @@ const WrapperModule = ({
   MatchesDataFormattedAvgByAt
 }: any) => {
   const [isOpenCountriesList, setIsOpenCountriesList] = useState(false);
+
+  console.log(data.analizedAt);
+
   return (
     <Fragment>
       <Helmet>
@@ -231,6 +234,11 @@ const WrapperModule = ({
               )}
             </List>
           </section>
+          {data.analyzedAt && (
+            <p>
+              <small>Última actualización: {data.analyzedAt.date}</small>
+            </p>
+          )}
         </main>
       </components.ContentStyled>
     </Fragment>
