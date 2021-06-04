@@ -1,1 +1,1 @@
-[{"types":"matches","teams":61,"mean":7.950819,"min":1,"median":2,"max":66,"variance":213.680874},{"types":"gf_sum","teams":61,"mean":8.393442,"min":0,"median":2,"max":75,"variance":263.142623},{"types":"ga_sum","teams":61,"mean":15.67213,"min":0,"median":3,"max":129,"variance":1017.057377}]
+[{"types":"matches","teams":61,"mean":8,"min":1,"median":2,"max":66,"variance":216.766667},{"types":"gf_sum","teams":61,"mean":8.47541,"min":0,"median":2,"max":78,"variance":272.120219},{"types":"ga_sum","teams":61,"mean":15.754096,"min":0,"median":3,"max":129,"variance":1027.788525}]
