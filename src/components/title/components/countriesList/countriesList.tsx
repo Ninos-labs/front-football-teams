@@ -13,7 +13,7 @@ export const countries = [
   { name: 'Canada', code: 'canada' },
   { name: 'Colombia', code: 'col' },
   { name: 'Costa Rica', code: 'costarica' },
-  { name: 'Chile', code: 'chi' },
+  { name: 'Chile', code: 'chile' },
   { name: 'Ecuador', code: 'ecu' },
   { name: 'El Salvador', code: 'elsalvador' },
   { name: 'Guatemala', code: 'guatemala' },
