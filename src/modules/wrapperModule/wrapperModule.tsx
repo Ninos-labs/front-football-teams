@@ -18,24 +18,19 @@ const WrapperModule = ({
 }: any) => {
   const [isOpenCountriesList, setIsOpenCountriesList] = useState(false);
 
-  console.log(data.analizedAt);
-
   return (
     <Fragment>
       <Helmet>
         <title>{title} | Estadísticas de Fútbol</title>
       </Helmet>
-      <components.HeaderStyled>
-        <components.Title
-          team={title}
-          isOpenCountriesList={isOpenCountriesList}
-          setIsOpenCountriesList={() => setIsOpenCountriesList(!isOpenCountriesList)}
-        />
-      </components.HeaderStyled>
       <components.ContentStyled>
         <aside>
           <header>
-            <components.BoxTitleStyled>Resumen</components.BoxTitleStyled>
+            <components.Title
+              team={title}
+              isOpenCountriesList={isOpenCountriesList}
+              setIsOpenCountriesList={() => setIsOpenCountriesList(!isOpenCountriesList)}
+            />
           </header>
           <components.MatchCounter title="Partidos" amount={results.matchesTotal} isTotal />
           <components.MatchCounter title="Victorias" amount={results.winAvg} />
@@ -204,36 +199,42 @@ const WrapperModule = ({
               />
             </section>
           </div>
-          <section>
-            {notPlayed.length >= 1 && (
-              <components.BoxTitleStyled>Próximos partidos</components.BoxTitleStyled>
-            )}
-            {notPlayed.length >= 1 && (
-              <List height={150} itemCount={notPlayed.length} itemSize={70} width="100%">
+          <div>
+            <section>
+              {notPlayed.length >= 1 && (
+                <components.BoxTitleStyled>Próximos partidos</components.BoxTitleStyled>
+              )}
+              {notPlayed.length >= 1 && (
+                <List height={150} itemCount={notPlayed.length} itemSize={70} width="100%">
+                  {({ index, style }) => (
+                    <div key={index} style={style}>
+                      <components.Match {...utils.addTypesToMatch(notPlayed[index] as any)} />
+                    </div>
+                  )}
+                </List>
+              )}
+            </section>
+            <section>
+              <components.BoxTitleStyled>Goleadas históricas</components.BoxTitleStyled>
+              <List height={150} itemCount={historicalMatches.length} itemSize={70} width="100%">
                 {({ index, style }) => (
                   <div key={index} style={style}>
-                    <components.Match {...utils.addTypesToMatch(notPlayed[index] as any)} />
+                    <components.Match {...utils.addTypesToMatch(historicalMatches[index] as any)} />
                   </div>
                 )}
               </List>
-            )}
-            <components.BoxTitleStyled>Goleadas históricas</components.BoxTitleStyled>
-            <List height={150} itemCount={historicalMatches.length} itemSize={70} width="100%">
-              {({ index, style }) => (
-                <div key={index} style={style}>
-                  <components.Match {...utils.addTypesToMatch(historicalMatches[index] as any)} />
-                </div>
-              )}
-            </List>
-            <components.BoxTitleStyled>Últimos partidos</components.BoxTitleStyled>
-            <List height={560} itemCount={played.length} itemSize={70} width="100%">
-              {({ index, style }) => (
-                <div key={index} style={style}>
-                  <components.Match {...utils.addTypesToMatch(played[index] as any)} />
-                </div>
-              )}
-            </List>
-          </section>
+            </section>
+            <section>
+              <components.BoxTitleStyled>Últimos partidos</components.BoxTitleStyled>
+              <List height={560} itemCount={played.length} itemSize={70} width="100%">
+                {({ index, style }) => (
+                  <div key={index} style={style}>
+                    <components.Match {...utils.addTypesToMatch(played[index] as any)} />
+                  </div>
+                )}
+              </List>
+            </section>
+          </div>
           {data.analyzedAt && (
             <p>
               <small>Última actualización: {data.analyzedAt.date}</small>
