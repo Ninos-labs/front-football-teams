@@ -45,7 +45,11 @@ const CountriesList = ({ isOpenCountriesList }: CountriesListTypes) => {
   if (!isOpenCountriesList) return null;
   return (
     <CountriesListStyled data-testid="countries-list">
-      <input type="search" placeholder="buscar..." onChange={(e) => setQuery(e.target.value)} />
+      <input
+        type="search"
+        placeholder="Filtra por nombre..."
+        onChange={(e) => setQuery(e.target.value)}
+      />
       <small>{countriesFiltered.length} resultados encontrados</small>
       <div>
         {countriesFiltered.map((country, index) => (
