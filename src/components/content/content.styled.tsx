@@ -13,23 +13,24 @@ const ContentStyled = styled.div`
     padding: 0 2rem;
 
     @media screen and (max-width: ${({ theme }) => theme.size?.large}) {
+      align-content: stretch;
+      display: inline-flex;
       flex-basis: 100%;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 2rem;
+      position: relative;
     }
 
     @media screen and (min-width: ${({ theme }) => theme.size?.large}) {
       height: calc(100vh - 15rem);
       flex-basis: 23rem;
-      top: 4rem;
+      top: 2rem;
       position: sticky;
     }
 
-    @media screen and (max-width: ${({ theme }) => theme.size?.small}) {
-      margin: 0;
-    }
-
-    h2 {
-      padding-top: 2rem;
-      background-color: ${({ theme }) => theme.colors?.alabaster};
+    header {
+      flex-basis: 100%;
     }
   }
 
@@ -55,16 +56,27 @@ const ContentStyled = styled.div`
       }
     }
 
-    & > div {
+    & > div:first-of-type {
       width: calc(60% - 2rem);
 
       @media screen and (min-width: ${({ theme }) => theme.size?.xl}) {
         width: calc(70% - 2rem);
       }
+
+      section {
+        margin: 2rem 0;
+      }
+
+      section > div {
+        background-color: ${({ theme }) => theme.colors?.white};
+        border-radius: ${({ theme }) => theme.radius?.big};
+        border: 1px solid ${({ theme }) => theme.colors.black};
+        padding: 2rem;
+      }
     }
 
-    & > section {
-      top: 4rem;
+    & > div:last-of-type {
+      top: 2rem;
       position: sticky;
       width: calc(40% - 2rem);
 
@@ -74,11 +86,8 @@ const ContentStyled = styled.div`
     }
 
     section {
-      background-color: ${({ theme }) => theme.colors?.white};
       box-sizing: border-box;
-      border-radius: ${({ theme }) => theme.radius?.big};
-      margin: 2rem 0;
-      padding: 3rem;
+      padding: 0 2rem;
     }
   }
 `;
