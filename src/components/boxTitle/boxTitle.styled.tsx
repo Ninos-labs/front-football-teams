@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const BoxTitleStyled = styled.h2`
-  background-color: ${({ theme }) => theme.colors?.white};
+  background-color: inherit;
   font-size: ${({ theme }) => theme.fonts?.sizes?.subTitle};
   top: 0;
   padding: 0 0 2rem;
