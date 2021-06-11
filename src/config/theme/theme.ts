@@ -2,6 +2,7 @@ import { themeTypes } from './theme.type';
 
 export const theme: themeTypes = {
   colors: {
+    black: '#000',
     white: '#fff',
     alabaster: '#f7f7f7',
     blueZodiac: '#0A1130',

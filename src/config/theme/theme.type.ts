@@ -1,5 +1,6 @@
 export type themeTypes = {
   colors: {
+    black: string;
     white: string;
     alabaster: string;
     blueZodiac: string;
