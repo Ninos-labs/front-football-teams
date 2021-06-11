@@ -5,10 +5,20 @@ import { MatchCounterStyledTypeS } from './matchCounter.types';
 const MatchCounterStyled = styled.div`
   background-color: ${({ theme, isTotal }: MatchCounterStyledTypeS) =>
     isTotal ? theme.colors?.pastelGreen : theme.colors?.white};
-  color: ${({ theme, isTotal }: MatchCounterStyledTypeS) =>
-    isTotal ? theme.colors?.white : theme.colors?.blueZodiac};
+  border: 0.1rem solid ${({ theme }) => theme.radius?.black};
+  border-radius: ${({ theme }) => theme.radius?.big};
   line-height: 1;
+  margin: ${({ theme }) => `${theme.gutter?.small} 0`};
   padding: ${({ theme }) => theme.gutter?.small};
+
+  @media screen and (max-width: ${({ theme }) => theme.size?.large}) {
+    width: 100%;
+    max-width: 140px;
+  }
+
+  @media screen and (max-width: ${({ theme }) => theme.size?.small}) {
+    max-width: 80px;
+  }
 
   h4 {
     font-size: 1rem;
@@ -35,8 +45,9 @@ const MatchCounterStyled = styled.div`
 
   progress[value] {
     appearance: none;
-    border: none;
-    height: 4px;
+    border: 0.1rem solid ${({ theme }) => theme.colors?.black};
+    border-radius: ${({ theme }) => theme.radius?.small};
+    height: 0.4rem;
     width: 100%;
 
     &::-webkit-progress-value {
