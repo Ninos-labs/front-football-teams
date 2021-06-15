@@ -63,14 +63,10 @@ const ContentStyled = styled.div`
         width: calc(70% - 2rem);
       }
 
-      section {
-        margin: 2rem 0;
-      }
-
       section > div {
         background-color: ${({ theme }) => theme.colors?.white};
         border-radius: ${({ theme }) => theme.radius?.big};
-        border: 1px solid ${({ theme }) => theme.colors.black};
+        border: 1px solid ${({ theme }) => theme.colors?.black};
         padding: 2rem;
       }
     }
@@ -83,10 +79,19 @@ const ContentStyled = styled.div`
       @media screen and (min-width: ${({ theme }) => theme.size?.xl}) {
         width: calc(30% - 2rem);
       }
+
+      section {
+        margin-bottom: 2rem;
+
+        @media screen and (min-width: ${({ theme }) => theme.size?.large}) {
+          margin-top: 0;
+        }
+      }
     }
 
     section {
       box-sizing: border-box;
+      margin: 2rem 0;
       padding: 0 2rem;
     }
   }
