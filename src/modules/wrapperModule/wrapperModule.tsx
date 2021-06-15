@@ -16,13 +16,47 @@ const WrapperModule = ({
   historicalMatches,
   MatchesDataFormattedAvgByAt
 }: any) => {
+  const notPLayedOrdered = notPlayed.slice(0).reverse();
   const [isOpenCountriesList, setIsOpenCountriesList] = useState(false);
+  const [popup, setPopup] = useState({ isOpen: false, type: '' });
 
   return (
     <Fragment>
       <Helmet>
         <title>{title} | Estadísticas de Fútbol</title>
       </Helmet>
+      {popup.isOpen && (
+        <components.Popup>
+          <header>
+            <components.BoxTitleStyled>
+              {popup.type === 'upcoming' ? 'Próximos partidos' : 'Todos los partidos'}
+            </components.BoxTitleStyled>
+            <components.StyledButton onClick={() => setPopup({ isOpen: false, type: '' })}>
+              ✖
+            </components.StyledButton>
+          </header>
+          <div>
+            {popup.type === 'upcoming' && (
+              <List height={380} itemCount={notPLayedOrdered.length} itemSize={70} width="100%">
+                {({ index, style }) => (
+                  <div key={index} style={style}>
+                    <components.Match {...utils.addTypesToMatch(notPLayedOrdered[index] as any)} />
+                  </div>
+                )}
+              </List>
+            )}
+            {popup.type === 'last' && (
+              <List height={380} itemCount={played.length} itemSize={70} width="100%">
+                {({ index, style }) => (
+                  <div key={index} style={style}>
+                    <components.Match {...utils.addTypesToMatch(played[index] as any)} />
+                  </div>
+                )}
+              </List>
+            )}
+          </div>
+        </components.Popup>
+      )}
       <components.ContentStyled>
         <aside>
           <header>
@@ -201,47 +235,54 @@ const WrapperModule = ({
           </div>
           <div>
             <section>
-              {notPlayed.length >= 1 && (
+              {notPLayedOrdered.length >= 1 && (
                 <components.BoxTitleStyled>Próximos partidos</components.BoxTitleStyled>
               )}
-              {notPlayed.length >= 1 && (
-                <List height={150} itemCount={notPlayed.length} itemSize={70} width="100%">
-                  {({ index, style }) => (
-                    <div key={index} style={style}>
-                      <components.Match {...utils.addTypesToMatch(notPlayed[index] as any)} />
-                    </div>
-                  )}
-                </List>
+              {notPLayedOrdered.length >= 1 &&
+                notPLayedOrdered
+                  .slice(0, 2)
+                  .map((match: any, index: number) => (
+                    <components.Match key={index} {...utils.addTypesToMatch(match as any)} />
+                  ))}
+              {notPLayedOrdered.length > 2 && (
+                <components.StyledButton
+                  onClick={() => setPopup({ isOpen: true, type: 'upcoming' })}
+                >
+                  Ver Todos →
+                </components.StyledButton>
               )}
             </section>
             <section>
               <components.BoxTitleStyled>Goleadas históricas</components.BoxTitleStyled>
-              <List height={150} itemCount={historicalMatches.length} itemSize={70} width="100%">
-                {({ index, style }) => (
-                  <div key={index} style={style}>
-                    <components.Match {...utils.addTypesToMatch(historicalMatches[index] as any)} />
-                  </div>
-                )}
-              </List>
+              {historicalMatches.length >= 1 &&
+                historicalMatches.map((match: any, index: number) => (
+                  <components.Match key={index} {...utils.addTypesToMatch(match as any)} />
+                ))}
             </section>
             <section>
               <components.BoxTitleStyled>Últimos partidos</components.BoxTitleStyled>
-              <List height={560} itemCount={played.length} itemSize={70} width="100%">
-                {({ index, style }) => (
-                  <div key={index} style={style}>
-                    <components.Match {...utils.addTypesToMatch(played[index] as any)} />
-                  </div>
-                )}
-              </List>
+              {played.length >= 1 &&
+                played
+                  .slice(0, 4)
+                  .map((match: any, index: number) => (
+                    <components.Match key={index} {...utils.addTypesToMatch(match as any)} />
+                  ))}
+              {played.length > 4 && (
+                <components.StyledButton onClick={() => setPopup({ isOpen: true, type: 'last' })}>
+                  Ver Todos →
+                </components.StyledButton>
+              )}
             </section>
           </div>
-          {data.analyzedAt && (
-            <p>
-              <small>Última actualización: {data.analyzedAt.date}</small>
-            </p>
-          )}
         </main>
       </components.ContentStyled>
+      <footer>
+        {data.analyzedAt && (
+          <p>
+            <small>Última actualización: {data.analyzedAt.date}</small>
+          </p>
+        )}
+      </footer>
     </Fragment>
   );
 };
