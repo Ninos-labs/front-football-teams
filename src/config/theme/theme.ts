@@ -2,6 +2,7 @@ import { themeTypes } from './theme.type';
 
 export const theme: themeTypes = {
   colors: {
+    black: '#000',
     white: '#fff',
     alabaster: '#f7f7f7',
     blueZodiac: '#0A1130',
@@ -32,9 +33,9 @@ export const theme: themeTypes = {
     big: '3rem'
   },
   size: {
-    small: '512px',
+    small: '800px',
     medium: '900px',
     large: '1200px',
-    xl: '1400px'
+    xl: '1500px'
   }
 };

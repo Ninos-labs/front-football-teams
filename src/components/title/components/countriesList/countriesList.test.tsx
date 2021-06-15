@@ -13,7 +13,7 @@ describe('Components | CountriesList', () => {
     );
     const inputNode = container.querySelector('input');
     expect(inputNode).toHaveAttribute('type', 'search');
-    expect(inputNode).toHaveAttribute('placeholder', 'buscar...');
+    expect(inputNode).toHaveAttribute('placeholder', 'Filtra por nombre...');
   });
 
   it('should fire onchange method on input and update countries list', () => {
@@ -28,7 +28,7 @@ describe('Components | CountriesList', () => {
     const listNode = container.querySelector('div');
     let linksNode = listNode.querySelectorAll('a');
 
-    expect(linksNode).toHaveLength(2);
+    expect(linksNode).toHaveLength(3);
 
     fireEvent.change(inputNode, { target: { value: 'argentina' } });
 
@@ -58,7 +58,7 @@ describe('Components | CountriesList', () => {
 
     const listNode = container.querySelector('div');
     const linksNode = listNode.querySelectorAll('a');
-    expect(linksNode).toHaveLength(10);
+    expect(linksNode).toHaveLength(18);
     linksNode.forEach((link, index) => {
       const code = `/${countries[index].code}`;
       const name = countries[index].name;

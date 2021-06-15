@@ -11,7 +11,7 @@ const MatchCounter = ({ title, amount, isTotal }: MatchCounterTypes) => {
       <h4>{title}</h4>
       <h5>{isTotal ? amount : `${amountFormatted}%`}</h5>
       {isTotal ? (
-        <small>[en total]</small>
+        <small>(en total)</small>
       ) : (
         <progress value={amountFormatted} max="100">
           progress: {amountFormatted}

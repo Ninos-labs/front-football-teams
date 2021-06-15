@@ -1,27 +1,35 @@
 import styled, { keyframes } from 'styled-components';
 
 const Appears = keyframes`
-  0% { top: 8rem; }
-  100% { top: 9rem; }
+  0% { top: 3rem; }
+  100% { top: 4.92rem; }
 `;
 
 const CountriesListStyled = styled.div`
   animation: ${Appears};
   animation-duration: 0.3s;
   animation-fill-mode: forwards;
-  background-color: white;
-  height: calc(100vh - 9rem);
-  left: 0;
+  background-color: ${({ theme }) => theme.colors?.alabaster};
+  border: 1px solid ${({ theme }) => theme.colors?.black};
+  border-radius: ${({ theme }) => `0 0 ${theme.radius?.big} ${theme.radius?.big}`};
+  box-sizing: border-box;
+  left: 2rem;
   margin: auto;
   min-width: 10rem;
-  padding: 1rem 2rem;
+  padding: 1rem;
   position: absolute;
   width: calc(100% - 4rem);
+  z-index: 2;
 
   & > div {
-    height: calc(100vh - 25rem);
+    height: auto;
+    max-height: calc(100vh - 25rem);
     margin: 0 1rem;
     overflow-y: auto;
+
+    @media screen and (max-width: ${({ theme }) => theme.size?.small}) {
+      max-height: 30rem;
+    }
   }
 
   small {
@@ -32,8 +40,8 @@ const CountriesListStyled = styled.div`
   }
 
   input  {
-    border: 0.1rem solid ${({ theme }) => theme.colors?.gallery};
-    border-radius: 0.4rem;
+    border: 0.1rem solid ${({ theme }) => theme.colors?.black};
+    border-radius: ${({ theme }) => theme.radius?.big};
     box-sizing: border-box;
     font-size: 1.6rem;
     margin: 1rem;
@@ -48,15 +56,12 @@ const CountriesListStyled = styled.div`
 
   a {
     color: ${({ theme }) => theme.colors?.blueZodiac};
-    border-bottom: 1px solid ${({ theme }) => theme.colors?.gallery};
     display: block;
-    font-size: 1.2rem;
-    font-weight: 500;
-    margin: 1rem 2rem 1rem 0;
-    padding: 1rem;
+    font-size: 1.4rem;
+    margin-right: 2rem;
+    padding: 1rem 0.5rem;
     text-decoration: none;
     outline: 0;
-    text-transform: uppercase;
 
     &:last-of-type {
       border-bottom: 0;

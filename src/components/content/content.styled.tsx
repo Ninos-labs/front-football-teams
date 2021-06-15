@@ -6,67 +6,93 @@ const ContentStyled = styled.div`
   top: 0;
 
   @media screen and (max-width: ${({ theme }) => theme.size?.large}) {
-    flex-direction: column-reverse;
-  }
-
-  aside,
-  main {
-    padding: 0 2rem;
+    flex-wrap: wrap;
   }
 
   aside {
+    padding: 0 2rem;
+
     @media screen and (max-width: ${({ theme }) => theme.size?.large}) {
-      margin: 0 2rem;
+      align-content: stretch;
+      display: inline-flex;
+      flex-basis: 100%;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 2rem;
+      position: relative;
     }
 
     @media screen and (min-width: ${({ theme }) => theme.size?.large}) {
       height: calc(100vh - 15rem);
-      flex-basis: 38rem;
-      top: 10rem;
+      flex-basis: 23rem;
+      top: 2rem;
       position: sticky;
-      overflow: hidden;
     }
 
-    @media screen and (max-width: ${({ theme }) => theme.size?.small}) {
-      margin: 0;
-    }
-
-    h2 {
-      padding-top: 2rem;
-      background-color: ${({ theme }) => theme.colors?.alabaster};
-
-      @media screen and (max-width: ${({ theme }) => theme.size?.medium}) {
-        border-top: 1px solid ${({ theme }) => theme.colors?.gallery};
-      }
+    header {
+      flex-basis: 100%;
     }
   }
 
   main {
-    @media screen and (min-width: ${({ theme }) => theme.size?.large}) {
-      flex-basis: calc(100% - 38rem);
-    }
+    align-items: flex-start;
+    display: flex;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
 
-    @media screen and (min-width: ${({ theme }) => theme.size?.medium}) {
-      display: flex;
-      flex-basis: 100%;
-      flex-wrap: wrap;
-      justify-content: center;
+    @media screen and (min-width: ${({ theme }) => theme.size?.large}) {
+      flex-basis: calc(100% - 23rem);
     }
 
     @media screen and (max-width: ${({ theme }) => theme.size?.small}) {
       padding: 0;
     }
 
-    section {
-      background-color: ${({ theme }) => theme.colors?.white};
-      box-sizing: border-box;
-      border-radius: ${({ theme }) => theme.radius?.big};
-      margin: 2rem;
-      padding: 3rem;
-      width: calc(100% - 4rem);
-      @media screen and (min-width: ${({ theme }) => theme.size?.medium}) {
-        width: calc(50% - 4rem);
+    & > * {
+      @media screen and (max-width: ${({ theme }) => theme.size?.small}) {
+        flex-basis: 100%;
       }
+    }
+
+    & > div:first-of-type {
+      width: calc(60% - 2rem);
+
+      @media screen and (min-width: ${({ theme }) => theme.size?.xl}) {
+        width: calc(70% - 2rem);
+      }
+
+      section > div {
+        background-color: ${({ theme }) => theme.colors?.white};
+        border-radius: ${({ theme }) => theme.radius?.big};
+        border: 1px solid ${({ theme }) => theme.colors?.black};
+        padding: 2rem;
+      }
+    }
+
+    & > div:last-of-type {
+      top: 2rem;
+      position: sticky;
+      width: calc(40% - 2rem);
+
+      @media screen and (min-width: ${({ theme }) => theme.size?.xl}) {
+        width: calc(30% - 2rem);
+      }
+
+      section {
+        margin-bottom: 2rem;
+
+        @media screen and (min-width: ${({ theme }) => theme.size?.large}) {
+          margin-top: 0;
+        }
+      }
+    }
+
+    section {
+      box-sizing: border-box;
+      margin: 2rem 0;
+      padding: 0 2rem;
     }
   }
 `;

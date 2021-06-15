@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 const FinalResultsStyled = styled.div`
   background-color: ${({ theme }) => theme.colors?.white};
+  border: 0.1rem solid ${({ theme }) => theme.colors?.black};
   border-radius: ${({ theme }) => theme.radius?.big};
   flex-basis: 6rem;
   font-size: 1.8rem;

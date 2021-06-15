@@ -24,6 +24,20 @@ const GlobalStyles = createGlobalStyle(
       font-family: ${theme.fonts.family.toString()};
       font-size: ${theme.fonts.sizes.default};
       margin: 0;
+
+      &.fixed {
+        overflow: hidden;
+        top: 0;
+
+        &:before {
+          content: '';
+          background-color: rgba(0,0,0,.5);
+          width: 100%;
+          height: 100%;
+          position: fixed;
+          z-index: 1;
+        }
+      }
     }
 
     * {
@@ -52,6 +66,10 @@ const GlobalStyles = createGlobalStyle(
     #root {
       margin: 0 auto;
       max-width: 180rem;
+    }
+
+    footer {
+      padding: 2rem;
     }
   `
 );
