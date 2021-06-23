@@ -16,6 +16,7 @@ const Routes: FC = () => (
       <Route exact path="/equipos/costarica" component={Modules.Costarica} />
       <Route exact path="/equipos/chile" component={Modules.Chile} />
       <Route exact path="/equipos/ecu" component={Modules.Ecu} />
+      <Route exact path="/equipos/eeuu" component={Modules.EEUU} />
       <Route exact path="/equipos/elsalvador" component={Modules.ElSalvador} />
       <Route exact path="/equipos/guatemala" component={Modules.Guatemala} />
       <Route exact path="/equipos/honduras" component={Modules.Honduras} />
