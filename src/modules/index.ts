@@ -7,6 +7,7 @@ import Col from './col';
 import Costarica from './costarica';
 import Chile from './chile';
 import Ecu from './ecu';
+import EEUU from './eeuu';
 import ElSalvador from './elsalvador';
 import Guatemala from './guatemala';
 import Honduras from './honduras';
@@ -27,6 +28,7 @@ export {
   Costarica,
   Chile,
   Ecu,
+  EEUU,
   ElSalvador,
   Guatemala,
   Honduras,
