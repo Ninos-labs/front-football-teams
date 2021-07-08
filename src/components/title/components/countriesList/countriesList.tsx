@@ -6,6 +6,7 @@ import CountriesListTypes from './countriesList.types';
 import CountriesListStyled from './countriesList.styled';
 
 export const countries = [
+  { name: 'Anguila', code: 'anguila' },
   { name: 'Argentina', code: 'arg' },
   { name: 'Belice', code: 'belice' },
   { name: 'Bolivia', code: 'bol' },

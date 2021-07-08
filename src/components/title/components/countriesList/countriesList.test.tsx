@@ -58,7 +58,7 @@ describe('Components | CountriesList', () => {
 
     const listNode = container.querySelector('div');
     const linksNode = listNode.querySelectorAll('a');
-    expect(linksNode).toHaveLength(20);
+    expect(linksNode).toHaveLength(21);
     linksNode.forEach((link, index) => {
       const code = `/${countries[index].code}`;
       const name = countries[index].name;
