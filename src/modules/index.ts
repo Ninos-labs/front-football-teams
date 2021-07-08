@@ -1,3 +1,4 @@
+import Anguila from './anguila';
 import Arg from './arg';
 import Belice from './belice';
 import Bol from './bol';
@@ -20,6 +21,7 @@ import Uru from './uru';
 import Ven from './ven';
 
 export {
+  Anguila,
   Arg,
   Belice,
   Bol,
