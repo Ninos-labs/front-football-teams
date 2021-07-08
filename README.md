@@ -29,7 +29,7 @@ Mediante un proceso de [ETL](https://en.wikipedia.org/wiki/Extract,_transform,_l
 - [x] Canada
 - [x] Estados Unidos
 - [x] Mexico
-- [ ] Anguila
+- [x] Anguila
 - [ ] Antigua y Barbuda
 - [ ] Aruba
 - [ ] Bahamas
